@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/react-fluid-aspect-ratio-grid/precache-manifest.363085334c855bd6745471783bf09b14.js"
+  "/react-fluid-aspect-ratio-grid/precache-manifest.0f4d551c2dfcfc776e8e3b2734aec772.js"
 );
 
 self.addEventListener('message', (event) => {
