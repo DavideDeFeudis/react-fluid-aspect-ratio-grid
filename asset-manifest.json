@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-fluid-aspect-ratio-grid/static/css/main.4411f538.chunk.css",
+    "main.js": "/react-fluid-aspect-ratio-grid/static/js/main.79aa43d0.chunk.js",
+    "main.js.map": "/react-fluid-aspect-ratio-grid/static/js/main.79aa43d0.chunk.js.map",
+    "runtime-main.js": "/react-fluid-aspect-ratio-grid/static/js/runtime-main.787ee127.js",
+    "runtime-main.js.map": "/react-fluid-aspect-ratio-grid/static/js/runtime-main.787ee127.js.map",
+    "static/js/2.0b42bec6.chunk.js": "/react-fluid-aspect-ratio-grid/static/js/2.0b42bec6.chunk.js",
+    "static/js/2.0b42bec6.chunk.js.map": "/react-fluid-aspect-ratio-grid/static/js/2.0b42bec6.chunk.js.map",
+    "index.html": "/react-fluid-aspect-ratio-grid/index.html",
+    "precache-manifest.363085334c855bd6745471783bf09b14.js": "/react-fluid-aspect-ratio-grid/precache-manifest.363085334c855bd6745471783bf09b14.js",
+    "service-worker.js": "/react-fluid-aspect-ratio-grid/service-worker.js",
+    "static/css/main.4411f538.chunk.css.map": "/react-fluid-aspect-ratio-grid/static/css/main.4411f538.chunk.css.map",
+    "static/js/2.0b42bec6.chunk.js.LICENSE.txt": "/react-fluid-aspect-ratio-grid/static/js/2.0b42bec6.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.787ee127.js",
+    "static/js/2.0b42bec6.chunk.js",
+    "static/css/main.4411f538.chunk.css",
+    "static/js/main.79aa43d0.chunk.js"
+  ]
+}
