@@ -1,30 +1,41 @@
 # react-fluid-aspect-ratio-grid
 
-> Made with create-react-library
+> A grid container that adapts the number of columns to limit the aspect ratio of its children.
 
-[![NPM](https://img.shields.io/npm/v/react-fluid-aspect-ratio-grid.svg)](https://www.npmjs.com/package/react-fluid-aspect-ratio-grid) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/react-fluid-aspect-ratio-grid.svg)](https://www.npmjs.com/package/react-fluid-aspect-ratio-grid)
 
 ## Install
 
 ```bash
-npm install --save react-fluid-aspect-ratio-grid
+npm i react-fluid-aspect-ratio-grid
 ```
 
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
-
-import MyComponent from 'react-fluid-aspect-ratio-grid'
+import React from 'react'
+import Grid from 'react-fluid-aspect-ratio-grid'
 import 'react-fluid-aspect-ratio-grid/dist/index.css'
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
+function App() {
+  return (
+    <Grid maxAspectRatio='2.2' gap='1rem'>
+      <div className='grid-item'></div>
+      <div className='grid-item'></div>
+      <div className='grid-item'></div>
+      <div className='grid-item'></div>
+    </Grid>
+  )
 }
 ```
 
+## Props
+
+| Prop           | Type             | Description                                                |
+| -------------- | ---------------- | ---------------------------------------------------------- |
+| maxAspectRatio | number           | The aspect ratio that must not be exceeded by the chilren. |
+| gap            | number           | The grid gap.                                              |
+
 ## License
 
-MIT © [Davide De Feudis](https://github.com/Davide De Feudis)
+MIT © [Davide De Feudis](https://github.com/DavideDeFeudis)

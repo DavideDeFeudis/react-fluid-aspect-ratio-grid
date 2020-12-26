@@ -12,3 +12,27 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  padding: 1rem;
+}
+
+section {
+  flex-grow: 1;
+  padding: 1rem;
+  background: rgb(11, 97, 11);
+}
+
+.grid-item {
+  background: rgb(97, 11, 97);
+}
+
+button {
+  padding: 0.5rem;
+}

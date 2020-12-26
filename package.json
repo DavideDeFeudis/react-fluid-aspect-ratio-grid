@@ -1,10 +1,10 @@
 {
   "name": "react-fluid-aspect-ratio-grid",
   "version": "1.0.0",
-  "description": "Made with create-react-library",
+  "description": "A grid container that adapts the number of columns to limit the aspect ratio of its children",
   "author": "Davide De Feudis",
   "license": "MIT",
-  "repository": "Davide De Feudis/react-fluid-aspect-ratio-grid",
+  "repository": "DavideDeFeudis/react-fluid-aspect-ratio-grid",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.js",
