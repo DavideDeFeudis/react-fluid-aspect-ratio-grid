@@ -37,8 +37,8 @@ function App() {
 
 | Prop           | Type             | Description                                                |
 | -------------- | ---------------- | ---------------------------------------------------------- |
-| maxAspectRatio | number           | The aspect ratio that must not be exceeded by the chilren. |
-| gap            | number           | The grid gap.                                              |
+| maxAspectRatio | string           | The aspect ratio that must not be exceeded by the chilren. |
+| gap            | string           | The grid gap.                                              |
 
 ## License
 

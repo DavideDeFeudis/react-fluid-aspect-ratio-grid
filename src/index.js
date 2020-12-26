@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useLayoutEffect, useRef } from 'react'
+import PropTypes from 'prop-types'
 
 const getColumns = (size, numOfItems, maxAspectRatio) => {
   const { width, height } = size
@@ -49,4 +50,9 @@ export default function Grid({ children, maxAspectRatio, gap }) {
       {children}
     </div>
   )
+}
+
+Grid.propTypes = {
+  size: PropTypes.string,
+  numOfItems: PropTypes.string
 }
