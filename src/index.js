@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useLayoutEffect, useRef } from 'react'
-import styles from './styles.module.css'
 
 const getColumns = (size, numOfItems, maxAspectRatio) => {
   const { width, height } = size
@@ -40,8 +39,9 @@ export default function Grid({ children, maxAspectRatio, gap }) {
   return (
     <div
       ref={gridRef}
-      className={styles.grid}
       style={{
+        display: 'grid',
+        height: '100%',
         gridTemplateColumns: `repeat(${columns}, minmax(0, 1fr))`,
         gridGap: `${gap}`
       }}
