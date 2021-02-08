@@ -25,7 +25,7 @@ function App() {
           <button onClick={removeItem}>Remove item</button>
         </header>
         <section>
-          <Grid maxAspectRatio='2.2' gap='1rem'>
+          <Grid maxAspectRatio={2.2} gap='1rem'>
             {items.map((item, i) => (
               <div className='grid-item' key={i}></div>
             ))}

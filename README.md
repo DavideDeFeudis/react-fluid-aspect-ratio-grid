@@ -23,7 +23,7 @@ import 'react-fluid-aspect-ratio-grid/dist/index.css'
 
 function App() {
   return (
-    <Grid maxAspectRatio='2.2' gap='1rem'>
+    <Grid maxAspectRatio={2.2} gap='1rem'>
       <div className='grid-item'></div>
       <div className='grid-item'></div>
       <div className='grid-item'></div>
@@ -35,10 +35,10 @@ function App() {
 
 ## Props
 
-| Prop           | Type             | Description                                                |
-| -------------- | ---------------- | ---------------------------------------------------------- |
-| maxAspectRatio | string           | The aspect ratio that must not be exceeded by the chilren. |
-| gap            | string           | The grid gap.                                              |
+| Prop           | Type   | Description                                                |
+| -------------- | ------ | ---------------------------------------------------------- |
+| maxAspectRatio | number | The aspect ratio that must not be exceeded by the chilren. |
+| gap            | string | The grid gap.                                              |
 
 ## License
 

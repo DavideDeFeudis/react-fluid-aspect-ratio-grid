@@ -1,7 +1,12 @@
-import { ExampleComponent } from '.'
+import React from 'react'
+import Grid from '.'
+import { shallow } from 'enzyme'
 
-describe('ExampleComponent', () => {
+// const setup = () => shallow(<Grid />)
+
+describe('Grid', () => {
+  const grid = setup()
   it('is truthy', () => {
-    expect(ExampleComponent).toBeTruthy()
+    expect(grid).toBeTruthy()
   })
 })

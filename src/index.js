@@ -53,6 +53,6 @@ export default function Grid({ children, maxAspectRatio, gap }) {
 }
 
 Grid.propTypes = {
-  size: PropTypes.string,
-  numOfItems: PropTypes.string
+  maxAspectRatio: PropTypes.number,
+  gap: PropTypes.string
 }
