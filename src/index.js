@@ -1,4 +1,10 @@
-import React, { useState, useEffect, useLayoutEffect, useRef } from 'react'
+import React, {
+  useState,
+  useEffect,
+  useLayoutEffect,
+  useRef,
+  useMemo
+} from 'react'
 import PropTypes from 'prop-types'
 
 const getColumns = (size, numOfItems, maxAspectRatio) => {
@@ -29,6 +35,16 @@ export default function Grid({ children, maxAspectRatio, gap }) {
     setColumns(getColumns(size, React.Children.count(children), maxAspectRatio))
   }, [size, React.Children.count(children)])
 
+  const styles = useMemo(
+    () => ({
+      display: 'grid',
+      height: '100%',
+      gridTemplateColumns: `repeat(${columns}, minmax(0, 1fr))`,
+      gridGap: `${gap}`
+    }),
+    [columns, gap]
+  )
+
   const createResizeObserver = () => {
     return new ResizeObserver((entries) => {
       const { width, height } = entries[0].contentRect
@@ -37,15 +53,7 @@ export default function Grid({ children, maxAspectRatio, gap }) {
   }
 
   return (
-    <div
-      ref={gridRef}
-      style={{
-        display: 'grid',
-        height: '100%',
-        gridTemplateColumns: `repeat(${columns}, minmax(0, 1fr))`,
-        gridGap: `${gap}`
-      }}
-    >
+    <div ref={gridRef} style={styles}>
       {children}
     </div>
   )
