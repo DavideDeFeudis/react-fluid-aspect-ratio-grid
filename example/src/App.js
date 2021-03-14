@@ -38,7 +38,10 @@ function App() {
               Npm package
             </a>
           </p>
-          <p>Add/remove items and resize the window.</p>
+          <p>
+            Add/remove items and resize the window. The grid's children won't
+            exceed the specified max aspect-ratio (2.2 in this example).
+          </p>
           <button onClick={addItem}>Add item</button>
           <button onClick={removeItem}>Remove item</button>
         </header>
