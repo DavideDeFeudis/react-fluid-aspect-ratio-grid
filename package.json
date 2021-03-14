@@ -1,6 +1,6 @@
 {
   "name": "react-fluid-aspect-ratio-grid",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A grid container that adapts the number of columns to limit the aspect ratio of its children",
   "author": "Davide De Feudis",
   "license": "MIT",
@@ -33,7 +33,8 @@
     "deploy": "gh-pages -d example/build"
   },
   "peerDependencies": {
-    "react": "^16.0.0"
+    "react": "^16.8.0",
+    "prop-types": "^15.7.2"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.3",
@@ -61,8 +62,5 @@
   },
   "files": [
     "dist"
-  ],
-  "dependencies": {
-    "prop-types": "^15.7.2"
-  }
+  ]
 }
