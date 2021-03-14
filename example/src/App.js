@@ -24,6 +24,7 @@ function App() {
             <a
               href='https://github.com/DavideDeFeudis/react-fluid-aspect-ratio-grid'
               target='_blank'
+              rel='noopener noreferrer'
             >
               GitHub repo
             </a>
@@ -32,6 +33,7 @@ function App() {
             <a
               href='https://www.npmjs.com/package/react-fluid-aspect-ratio-grid'
               target='_blank'
+              rel='noopener noreferrer'
             >
               Npm package
             </a>
