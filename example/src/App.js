@@ -20,7 +20,23 @@ function App() {
       <main>
         <header>
           <h1>react-fluid-aspect-ratio-grid example</h1>
-          <p>Try adding/removing items and resizing the window.</p>
+          <p>
+            <a
+              href='https://github.com/DavideDeFeudis/react-fluid-aspect-ratio-grid'
+              target='_blank'
+            >
+              GitHub repo
+            </a>
+          </p>
+          <p>
+            <a
+              href='https://www.npmjs.com/package/react-fluid-aspect-ratio-grid'
+              target='_blank'
+            >
+              Npm package
+            </a>
+          </p>
+          <p>Add/remove items and resize the window.</p>
           <button onClick={addItem}>Add item</button>
           <button onClick={removeItem}>Remove item</button>
         </header>
