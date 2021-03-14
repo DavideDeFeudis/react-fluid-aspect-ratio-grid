@@ -18,23 +18,22 @@ export default function Grid({ children, maxAspectRatio, gap }) {
   const gridRef = useRef()
   const [size, setSize] = useState({ width: 0, height: 0 })
   const [columns, setColumns] = useState(1)
-  let resizeObserver
 
   useEffect(() => {
-    setupResizeObserver()
-    return () => resizeObserver.disconnect()
+    const observer = createResizeObserver()
+    observer.observe(gridRef.current)
+    return () => observer.disconnect()
   }, [])
 
   useLayoutEffect(() => {
-    setColumns(getColumns(size, children.length, maxAspectRatio))
-  }, [size, children.length])
+    setColumns(getColumns(size, React.Children.count(children), maxAspectRatio))
+  }, [size, React.Children.count(children)])
 
-  const setupResizeObserver = () => {
-    resizeObserver = new ResizeObserver((entries) => {
+  const createResizeObserver = () => {
+    return new ResizeObserver((entries) => {
       const { width, height } = entries[0].contentRect
       setSize({ width, height })
     })
-    resizeObserver.observe(gridRef.current)
   }
 
   return (
@@ -54,5 +53,6 @@ export default function Grid({ children, maxAspectRatio, gap }) {
 
 Grid.propTypes = {
   maxAspectRatio: PropTypes.number,
-  gap: PropTypes.string
+  gap: PropTypes.string,
+  children: PropTypes.node
 }
